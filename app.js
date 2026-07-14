@@ -102,6 +102,14 @@ app.post("/add",async(request,response)=>{
 
 
 
+app.get("/view",async(request,response)=>{
+
+const hack=await Hackathon.find()       //to get all course and keep in courses
+
+
+    response.send(hack)
+
+})
 
 
 
